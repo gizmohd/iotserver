@@ -1,3 +1,4 @@
 #!/bin/bash
+echo "Updating Source Files"
 cd /opt/iotserver
-git fetch origin
+git pull origin
