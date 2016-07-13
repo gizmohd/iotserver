@@ -5,13 +5,13 @@ var elasticsearch = require('elasticsearch');
 var _ = require('underscore')
 var es_client = null;
 
-router.get('/events/:instanceId/:temp/:humid', function (req,res) {
+router.get('/events/:deviceId/:temp/:humid', function (req,res) {
     // Set our internal DB variable
     var db = req.db;
 
     // Get our form values. These rely on the "name" attributes
     var eventObj = {
-					"instanceId":req.params.instanceId,
+					"deviceId":req.params.deviceId,
 					"temperature":parseFloat(req.params.temp),
 					"humidity":parseFloat(req.params.humid),
 					"timeStamp":moment.utc().toDate() ,

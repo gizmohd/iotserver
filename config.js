@@ -7,8 +7,7 @@ var cfg={
 	"es_index":"nodeTest",
 	"db":"iotdatabase",
 	"dbConnString":"localhost:27017",
-	"installationId":"TestInstallation”,
-        “port
+	"installationId":"TestInstallation"
 };
 
 module.exports=cfg;
