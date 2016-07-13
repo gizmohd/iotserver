@@ -5,7 +5,7 @@ var elasticsearch = require('elasticsearch');
 var _ = require('underscore')
 var es_client = null;
 
-router.post('/events/:deviceId/:temp/:humid', function (req,res) {
+router.get('/events/:deviceId/:temp/:humid', function (req,res) {
     // Set our internal DB variable
     var db = req.db;
 
